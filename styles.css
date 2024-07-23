@@ -1,1 +1,271 @@
+html {
+  box-sizing: border-box;
+}
 
+*, 
+::before, 
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f3fad1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: Futura, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* HEADER */
+
+.title-header {
+  background-color: #1c1d1e;
+  display: flex;
+  min-height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+#game-title {
+  text-align: center;
+  font-size: 50px;
+  color: rgb(241, 245, 246);
+  font-weight: bolder;
+}
+
+/* WELCOME UI */
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#start {
+  font-size: 35px;
+  background: linear-gradient(109.6deg, rgba(156,252,248,1) 11.2%, rgb(216, 219, 243) 91.1%);
+  border-radius: 25px;
+  border: 5px rgb(60, 120, 124);
+  border-style: outset;
+  width: 300px;
+  height: 110px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+#start:hover {
+  background: linear-gradient(109.6deg, rgb(86, 233, 225) 11.2%, rgb(164, 173, 241) 91.1%);
+}
+
+#welcome {
+  color: rgb(23, 203, 210);
+  text-align: center;
+  font-weight: bold;
+  font-size: 62px;
+  min-width: 500px;
+  margin-bottom: -150px;
+  -webkit-text-stroke: 2px black;
+}
+
+.end-container {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#press, 
+#to-play-the-game {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(23, 203, 210);
+  text-align: center;
+  -webkit-text-stroke: 0.05em black;
+}
+
+#press {
+  margin-bottom: 15px;
+}
+  
+#to-play-the-game {
+  margin-top: 15px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: #1c1d1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+  margin-top: 20px;
+}
+
+#footer {
+  color: rgb(241, 245, 246);
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+a {
+  color: rgb(133, 210, 192);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(66, 241, 200);
+}
+
+/* GAME UI */
+
+.UI-container {
+  flex: 1 0 auto;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.player-container {
+  margin-left: 400px;
+  margin-top: 50px;
+}
+  
+.computer-container {
+  margin-right: 400px;
+  margin-top: 50px;
+}
+
+#player,
+#computer {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#player-score,
+#computer-score {
+  text-align: center;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+
+.player-display,
+.computer-display {
+  background: linear-gradient(#09d4f4, #0c7080);
+  width: 300px;
+  height: 300px;
+  border: 5px rgb(13, 134, 108);
+  border-style: groove;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}  
+
+img {                             
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#player-selection,
+#computer-selection {
+  text-align: center;
+  font-size: 18px;
+  height: 55px;
+  margin-top: 5px;
+}
+
+.VS-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+#VS {
+  font-weight: bolder;
+  font-size: 100px;
+}
+
+#round-result {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+/* Display the winner */
+
+.final-container {
+  align-items: center;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#final-result {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Rock, Paper, Scissors buttons */
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#Rock,
+#Paper,
+#Scissors {
+  background:linear-gradient(to right, #fbf57b, #fbca8a);
+  width: 200px;
+  height: 100px;
+  font-size: 26px;
+  border-radius: 15px;
+  border: 5px rgb(189, 34, 10);
+  border-style: outset;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+#Rock:hover,
+#Paper:hover,
+#Scissors:hover {
+  background:linear-gradient(to right, #ddd431, #f3ab4d);
+}
+
+/* Play Again button */
+
+.playAgain-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50px;
+  margin-top: 40px;
+}
+
+#play-again {
+  background: linear-gradient(to right, #a7dffd, #4ea3fe);
+  width: 200px;
+  height: 100px;
+  font-size: 26px;
+  border-radius: 15px;
+  border: 5px rgb(100, 11, 138);
+  border-style: outset;
+  box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+
+#play-again:hover {
+  background: linear-gradient(to right, #78c6f0, #3289e7);
+}
