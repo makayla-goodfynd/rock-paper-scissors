@@ -1,1 +1,68 @@
+<!DOCTYPE html>
 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="games.js" defer></script>
+  </head>
+
+  <body>
+    <div class="title-header">
+      <div id="game-title">Rock Paper Scissors</div>
+    </div>
+
+    <div class="UI-container">
+      <div class="main-container">
+        <div class="player-container">                              <!-- Player content -->
+          <div id="player">You</div>
+          <div id="player-score">Your score: 0</div>
+          <div class="player-display">     
+            <img src="data:," class="player-img" alt>               <!-- Empty img source -->
+          </div>
+          <div id="player-selection"></div>
+        </div>
+        <div class="VS-container">                                  <!-- VS content-->
+          <div id="VS">VS</div>
+          <div id="first-to-five">(First to 5)</div>
+          <div id="round-result"></div>
+        </div>
+        <div class="computer-container">                            <!-- Computer content -->
+          <div id="computer">Computer</div>
+          <div id="computer-score">Computer score: 0</div>
+          <div class="computer-display">
+            <img src="data:," class="computer-img" alt>             <!-- Empty img source -->
+          </div>
+          <div id="computer-selection"></div>
+        </div>
+      </div>
+
+      <div class="final-container">
+        <div id="final-result"></div>
+      </div>
+      
+      <div class="buttons-container">
+        <button id="Rock" class="optionBtn">Rock</button>
+        <button id="Paper" class="optionBtn">Paper</button>
+        <button id="Scissors" class="optionBtn">Scissors</button>
+      </div>
+      <div class="playAgain-container">
+        <button id="play-again">Play Again</button>
+      </div>
+    </div>
+
+    <div class="start-container">
+      <div id="welcome">Welcome to Rock Paper Scissors</div>
+      <div class="end-container">
+        <div id="press">Press</div>
+        <button id="start">Start</button>
+        <div id="to-play-the-game">to play the game</div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div id="footer">Rock Paper Scissors by <a href="" target="_blank">Vlad Hadyak</a></div>
+    </div>
+  </body>
